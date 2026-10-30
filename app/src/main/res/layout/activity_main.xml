@@ -1,0 +1,180 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- COVER DAN FOTO PROFIL -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp">
+
+            <ImageView
+                android:id="@+id/imgCover"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:src="@drawable/cover"
+                android:scaleType="centerCrop"
+                android:contentDescription="Cover"/>
+
+            <ImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@drawable/circle_bg"
+                android:src="@drawable/profile"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:contentDescription="Foto profil"/>
+
+        </FrameLayout>
+
+        <!-- NAMA -->
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Afgan"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:gravity="center"
+            android:layout_marginTop="12dp"/>
+
+        <!-- USERNAME -->
+        <TextView
+            android:id="@+id/txtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@Afgan"
+            android:textSize="14sp"
+            android:textColor="#999999"
+            android:gravity="center"/>
+
+        <!-- BIO -->
+        <TextView
+            android:id="@+id/txtBio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Photography | Travel | Lifestyle"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:gravity="center"
+            android:padding="12dp"/>
+
+        <!-- CONTACT -->
+        <TextView
+            android:id="@+id/txtContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="afgan@gmail.com"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:textColor="#777777"/>
+
+        <!-- COUNTRY -->
+        <TextView
+            android:id="@+id/txtCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Indonesia"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:textColor="#777777"
+            android:padding="5dp"/>
+
+        <!-- TOMBOL -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnFollow"
+                android:layout_width="140dp"
+                android:layout_height="45dp"
+                android:text="Follow"/>
+
+            <Button
+                android:id="@+id/btnShare"
+                android:layout_width="110dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:text="Share"/>
+
+        </LinearLayout>
+
+        <!-- STATISTIK -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="205\nPosts"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtFollowers"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="205K\nFollowers"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="870\nFollowing"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <!-- EDIT PROFILE -->
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="12dp"
+            android:text="Edit Profile"/>
+
+        <!-- JUDUL POST -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Posts"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:padding="12dp"/>
+
+        <!-- GALERI FOTO -->
+        <GridLayout
+            android:id="@+id/gridPosts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:padding="3dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
